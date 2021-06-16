@@ -63,7 +63,7 @@ is the resulting increase in runtime efficiency.
 
 ### Disadvantages of Refactoring Code
 
-A disadvantage of the Rafactored code is in usage of available
+A disadvantage of the Refactored code is in usage of available
 memory. The Original code uses only one Array to contain the
 Stock Ticker Symbols, while the calculated results are output
 once all the rows have been looped through for each iteration.
