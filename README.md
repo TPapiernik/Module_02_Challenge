@@ -36,11 +36,38 @@ Table 1: [Seconds, rounded to 4 decimal places]
 |Original  |0.7344  |1.0508   |
 |Refactored|0.1250  |0.1680   |
 
-
+Even on a small dataset comprizing observations for 12 discreet values over
+approximately 3,000 rows, it can readily be seen that the Refactored code performs
+about 6 times faster than the Original code. On larger datasets, one
+can imagine that this could quickly add up to much more significant
+runtimes in actual use. Since no matter how large the dataset grows,
+the Refactored code only runs the loop one time, the runtime will grow
+linearly according to the size of the dataset; however, the Original code
+adds an additional loop iteration for each new discreet value under consideration,
+and thus the runtime could increase exponentially as the size of the dataset grows if
+more and more ticker symbol values were taken into account.
 
 ## Summary
 
 ### Advantages of Refactoring Code
 
+In this case, a definite advantage of Refactoring the code
+is the resulting increase in runtime efficiency.
+
 
 ### Disadvantages of Refactoring Code
+
+A disadvantage of the Refactored Code, as it is currently
+implemented, is in terms of the order of the values contained within
+the dataset. In order for the correct expected results to be yielded,
+all the values contained within the dataset need to be sorted prior
+to running the analysis so that the Ticker Symbols and corresponding
+values are in ascending alphabetical order, corresponding to the order
+of the Ticker Symbols contained within the tickers Array. If the blocks of
+values, or individual values themselves were presented out of order, a result
+would be returned other than the correct expected one.
+
+Despite longer runtimes, the Original version of the code avoids this problem by
+considering each row of data in isolation and checking for a Ticker Symbol match.
+In this way, the Original Code would yield the correct expected result for each
+Ticker Symbol even if the dataset under consideration was un-sorted.
