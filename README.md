@@ -11,12 +11,12 @@ Subroutines previously written to perform analysis on a set of trading volume
 and price observations to see if they could be made to execute
 more quickly.
 
-The initial set of data contained one Dozen unique
+The initial set of data contained approximately 3,000 observations of one Dozen unique
 Stock Ticker Symbols upon which to perform analyses, and did not take
-a burdensome amount of computing time to complete. However, if the
+a burdensome amount of computing time to complete using the Original version of the code. However, if the
 original subroutine(s) were presented with a hypothetically much
 larger set of data to compute, or a larger number of unique Stock Ticker Symbols
-to consider, the code in its original form could
+to consider, the code in its Original form could
 have potentially taken much longer to execute.
 
 As an exercise, the original code was Refactored in a manner to
