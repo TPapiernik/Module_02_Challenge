@@ -19,7 +19,7 @@ larger set of data to compute, or a larger number of unique Stock Ticker Symbols
 to consider, the code in its Original form could
 have potentially taken much longer to execute.
 
-As an exercise, the original code was Refactored in a manner to
+As an exercise, the Original code was Refactored in a manner to
 complete all calculations and analyses by looping through the
 dataset only one time to completion. In this way, as the dataset
 gets larger, all other things being equal, compute time would grow
@@ -29,7 +29,7 @@ iterations.
 
 ## Results
 
-Upon successful completion of the refactoring, both versions of the code
+Upon successful completion of the Refactoring, both versions of the code
 were tested for runtime performance for both Year 2017 and Year 2018.
 
 The results of these tests are summarized below in
@@ -44,7 +44,9 @@ Even on a small dataset comprizing observations for 12 unique values over
 approximately 3,000 rows, it can readily be seen that the Refactored code performs
 about 6 times faster than the Original code. On larger datasets, one
 can imagine that this could quickly add up to much more significant
-runtimes in actual use. Since no matter how large the dataset grows,
+runtimes in actual use.
+
+Since no matter how large the dataset grows,
 the Refactored code only runs the loop one time, the runtime will grow
 linearly according to the size of the dataset; however, the Original code
 adds an additional loop iteration for each new unique value under consideration,
@@ -61,17 +63,12 @@ is the resulting increase in runtime efficiency.
 
 ### Disadvantages of Refactoring Code
 
-A disadvantage of the Refactored Code, as it is currently
-implemented, is in terms of the order of the values contained within
-the dataset. In order for the correct expected results to be output,
-all the values contained within the dataset need to be sorted prior
-to running the analysis so that the Stock Ticker Symbols and corresponding
-values are in ascending alphabetical order, corresponding to the order
-of the Stock Ticker Symbols contained within the `tickers` Array. If the blocks of
-values, or individual values themselves were presented out of order, a result
-would be returned other than the correct expected one.
+A disadvantage of the Rafactored code is in usage of available
+memory. The Original code uses only one Array to contain the
+Stock Ticker Symbols, while the calculated results are output
+once all the rows have been looped through for each iteration.
 
-Despite longer runtimes, the Original version of the code avoids this problem by
-considering each row of data in isolation and checking for a Stock Ticker Symbol match.
-In this way, the Original Code would output the correct expected result for each
-Stock Ticker Symbol even if the dataset under consideration was un-sorted.
+In contrast, the Refactored code uses 4 Arrays, 3 of which are
+used to temporarily store the calculated results until all the rows
+have been looped through. Then the Arrays themselves are looped
+through to output the results.
