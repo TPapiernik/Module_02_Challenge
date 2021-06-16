@@ -28,12 +28,15 @@ iterations.
 Upon successful completion of the refactoring, both versions of the code
 were tested for runtime performance for both Year 2017 and Year 2018.
 
-The results of these tests are summarized below in Table 1:
+The results of these tests are summarized below in
 
+Table 1: [Seconds, rounded to 4 decimal places]
 |          |2017    |2018     |
 |----------|--------|---------|
-|Original  |0.734375|1.050781 |
-|Refactored|0.125   |0.1679688|
+|Original  |0.7344  |1.0508   |
+|Refactored|0.1250  |0.1680   |
+
+
 
 ## Summary
 
