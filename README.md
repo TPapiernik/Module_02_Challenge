@@ -40,7 +40,7 @@ Table 1: [Seconds, rounded to 4 decimal places]
 |Original  |0.7344  |1.0508   |
 |Refactored|0.1250  |0.1680   |
 
-Even on a small dataset comprizing observations for 12 unique values over
+Even on a small dataset comprising observations for 12 unique values over
 approximately 3,000 rows, it can readily be seen that the Refactored code performs
 about 6 times faster than the Original code. On larger datasets, one
 can imagine that this could quickly add up to much more significant
