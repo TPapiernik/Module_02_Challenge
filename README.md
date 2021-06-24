@@ -41,7 +41,7 @@ iterations.
 It should be noted here that both versions of the code have a similar limitation regarding the structure of the input data itself:
 
 - The Original version of the code does not require clusters of Stock Ticker Symbol data to be in the same order as the tickers contained in the `tickers` array, but within each cluster of data itself the Stock Ticker Symbols need to be listed contiguously in chronological order, or the Starting and Ending prices would not be calculated correctly.
-- For the Refactored version of the code to execute properly, it depends both of the clusters of Stock Ticker Symbol data to be listed in the same order as the tickers contained in the `tickers` array, AND within each cluster of data itself the Stock Ticker Symbols need to be listed contiguously in chronological order.
+- For the Refactored version of the code to execute properly, it depends both on the clusters of Stock Ticker Symbol data to be listed in the same order as the tickers contained in the `tickers` array, AND within each cluster of data itself the Stock Ticker Symbols need to be listed contiguously in chronological order.
 
 ## Results
 
