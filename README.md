@@ -77,8 +77,20 @@ through to output the results.
 
 ### Code Execution Message Box Screenshots
 
-For reference, Screenshots of Code Execution Message Boxes are Reproduced Here (Available within `./Resources`):
+For reference, Screenshots of Code Execution Message Boxes are Reproduced Here (Also available within `./Resources`):
 
 Figure 1: Code Version 1 (2017):
 
 ![Figure 1](Resources/Code_v1_2017.png)
+
+Figure 2: Code Version 1 (2018):
+
+![Figure 1](Resources/Code_v1_2018.png)
+
+Figure 3: Refactored Code (2017):
+
+![Figure 1](Resources/VBA_Challenge_2017.png)
+
+Figure 4: Refactored Code (2018):
+
+![Figure 1](Resources/VBA_Challenge_2018.png)
