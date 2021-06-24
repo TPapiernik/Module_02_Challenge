@@ -23,12 +23,14 @@ The Original code accomplished its task through the use of a two for loop repeti
 
 1. An outer for loop to loop through all the specified tickers.
 2. An inner for loop to loop through all the rows in the data.
+	- Within the inner for loop, values on adjacent rows are compared to calculate total volume, starting price, and ending price for each Stock Ticker Symbol.
 
 As an exercise, the Original code was Refactored in a manner to
 complete all calculations and analyses by looping through the
 dataset only one time to completion:
 
 1. One for loop to loop through all the rows in the data.
+	- Values on adjacent rows are compared to calculate total volume, starting price, and ending price for each Stock Ticker Symbol.
 	- As soon as the Stock Ticker Symbol on the current row is different from the Stock Ticker Ticker Symbol on the next row, the Stock Ticker Symbol Index is advanced and values are computed for the next Stock Ticker Symbol.
 
 In this way, as the dataset gets larger, all other things being equal, compute time would grow
