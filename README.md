@@ -21,8 +21,8 @@ have potentially taken much longer to execute.
 
 The Original code accomplished its task through the use of a two for loop repetition statement structure:
 
-	1. An outer for loop to loop through all the specified tickers.
-	2. An inner for loop to loop through all the rows in the data.
+1. An outer for loop to loop through all the specified tickers.
+2. An inner for loop to loop through all the rows in the data.
 
 As an exercise, the Original code was Refactored in a manner to
 complete all calculations and analyses by looping through the
