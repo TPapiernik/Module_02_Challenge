@@ -72,3 +72,13 @@ In contrast, the Refactored code uses 4 Arrays, 3 of which are
 used to temporarily store the calculated results until all the rows
 have been looped through. Then the Arrays themselves are looped
 through to output the results.
+
+## Additional Resources
+
+### Code Execution Message Box Screenshots
+
+For reference, Screenshots of Code Execution Message Boxes are Reproduced Here (Available within `./Resources`):
+
+Figure 1: Code Version 1 (2017):
+
+![Figure 1](Resources/Code_v1_2017.png)
