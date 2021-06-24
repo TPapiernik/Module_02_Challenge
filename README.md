@@ -20,12 +20,14 @@ to consider, the code in its Original form could
 have potentially taken much longer to execute.
 
 The Original code accomplished its task through the use of a two for loop repetition statement structure:
+
 	1. An outer for loop to loop through all the specified tickers.
 	2. An inner for loop to loop through all the rows in the data.
 
 As an exercise, the Original code was Refactored in a manner to
 complete all calculations and analyses by looping through the
 dataset only one time to completion:
+
 	1. One for loop to loop through all the rows in the data. As soon as the Stock Ticker Symbol on the current row
 	is different from the Stock Ticker Ticker Symbol on the next row, the Stock Ticker Symbol Index is advanced and values are computed for the next Stock Ticker Symbol.
 
@@ -35,6 +37,7 @@ in the case of the original code version utilizing multiple loop
 iterations.
 
 It should be noted here that both versions of the code have a similar limitation regarding the structure of the input data itself:
+
 	- The Original version of the code does not require clusters of Stock Ticker Symbol data to be in the same order as the tickers contained in the `tickers` array, but within each cluster of data itself the Stock Ticker Symbols need to be listed contiguously in chronological order, or the Starting and Ending prices would not be calculated correctly.
 	- For the Refactored version of the code to execute properly, it depends both of the clusters of Stock Ticker Symbol data to be listed in the same order as the tickers contained in the `tickers` array, AND within each cluster of data itself the Stock Ticker Symbols need to be listed contiguously in chronological order.
 
